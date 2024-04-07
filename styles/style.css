@@ -9,7 +9,7 @@ https://templatemo.com/tm-541-host-cloud
   flex-grow: unset !important;
 }
 :root {
-  --main-color: #017cb7;
+  --main-color: #032539;
   --sec-color: #fa991c;
   --text-color: #f8f3f2;
   --section-padding: 80px;
@@ -389,7 +389,7 @@ nav {
   transform: translateY(-50%);
 }
 .main-heading {
-  color: #017cb7;
+  color: var(--main-color);
   text-align: center;
   margin-bottom: 30px;
   position: relative;
@@ -397,7 +397,7 @@ nav {
 .main-heading::before {
   content: "";
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 3px;
   background-color: var(--main-color);
   left: 0;
@@ -407,7 +407,7 @@ nav {
 .main-heading::after {
   content: "";
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 3px;
   background-color: var(--main-color);
   right: 0;
@@ -415,9 +415,104 @@ nav {
   transform: translateY(-50%);
 }
 
+
+
 /* End Components */
 
 /* End Events */
+
+/* Start Workshops */
+
+
+.workshop-title h2 {
+  margin: 20px;
+  color: var(--main-color);
+  width: fit-content;
+  position: relative;
+  cursor: default;
+}
+.workshop-title h2::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  transition: 0.3s;
+}
+.workshop-title h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+.workshop-title h2:hover::before {
+  right: 50px; /* Change left position on hover */
+}
+
+.workshop-title h2:hover::after {
+  left: 50px; /* Change right position on hover */
+}
+.workshop-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.workshop-card .card {
+  flex-basis: 32%;
+  background-color: #888;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 250px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .workshop-card .card {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 1190px) and (min-width: 769px) {
+  .workshop-card .card {
+    flex-basis: 45%;
+  }
+}
+
+.workshop-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.workshop-card .main-link {
+  padding: 8px 13px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.workshop-card .main-link::after {
+  right: 2px;
+  transition: 0.3s;
+}
+
+.workshop-card .main-link:hover::after {
+  right: 0px;
+}
+
+
+/* End Workshops */
 
 /* header content */
 /* button.btn.btn-info:active, */
@@ -1096,10 +1191,10 @@ footer .sub-footer a {
     margin-left: 0px;
   }
   .main-heading::before {
-    width: 35%;
+    width: 25%;
   }
   .main-heading::after {
-    width: 35%;
+    width: 25%;
   }
 }
 
