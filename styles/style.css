@@ -715,10 +715,7 @@ header .header-content h1 {
 
 /* Footer Style */
 footer {
-  background-image: url(../assets/images/footer-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: #017cb7;
   padding: 80px 0px 60px 0px;
 }
 footer .footer-heading h2 {
