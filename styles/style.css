@@ -1013,6 +1013,9 @@ footer .sub-footer a {
     font-size: 50px;
     text-align: center;
   }
+  header .header-content h1{
+    font-size: 30px;
+  }
   .header-content {
     display: flex;
     flex-direction: column-reverse;
