@@ -416,50 +416,6 @@ nav {
 
 /* End Components */
 
-.events {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
-}
-
-.events .main-heading h2 {
-  color: var(--main-color);
-}
-.events .cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.events .cards .card {
-  flex-basis: 32%;
-  background-color: #888;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  height: 250px;
-  border-radius: 10px;
-}
-
-.events .card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.events .main-link {
-  padding: 8px 13px;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-.events .main-link::after {
-  right: 2px;
-  transition: 0.3s;
-}
-.events .main-link:hover::after {
-  right: 0px;
-}
 /* End Events */
 
 /* header content */
@@ -473,6 +429,7 @@ button.btn.btn-info {
   border: unset;
   outline: unset;
   background-color: #fa991c;
+  color: #f8f3f2;
 }
 header .header-content .text h3 {
   color: #fa991c;
