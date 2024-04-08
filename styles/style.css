@@ -101,9 +101,7 @@ a.gradient-button:hover {
     rgba(114, 2, 187, 1) 100%
   );
 }
-.section-heading {
-  margin-bottom: 80px;
-}
+
 .section-heading span {
   color: #00bcd4;
   font-size: 15px;
@@ -343,7 +341,8 @@ nav {
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link.show,
 .navbar .navbar-nav .show > .nav-link {
-  color: #fa991c;
+  background-color: #fa991c;
+  border-radius: 5px;
 }
 .navbar .navbar-toggler-icon {
   background-image: none;
@@ -366,6 +365,115 @@ nav {
   line-height: 26px;
   font-family: "FontAwesome";
 }
+
+/* Start how are we */
+
+
+.haw-waves {
+    
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+    /* overflow: hidden; */
+  background-color: #032539;
+  overflow: hidden;
+}
+.haw-waves .wave {
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../images/wave.png);
+  background-size: 1000px 100px;
+}
+.haw-waves .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+.haw-waves .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.haw-waves .wave.wave3 {
+  animation: animate2 15s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+.haw-waves .wave.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+.haw-waves .header-section2 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  /* padding: 5rem; */
+  margin: auto;
+}
+.haw-waves .head {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin: 3rem 0;
+}
+.haw-waves .pragraph-head {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  line-height: 25px;
+  word-spacing: 2px;
+}
+.haw-waves .btn-head {
+  display: flex;
+  padding: 10px;
+  border: 0;
+  border: 2px solid#fa991c;
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 2rem auto 6rem;
+}
+.haw-waves .btn-head a{
+  color: white;
+}
+.haw-waves .btn-head:hover {
+  background-color: #fa991c;
+  transition: 0.4s;
+}
+
+/* End how are we */
+
+
 
 /* Start Events */
 
@@ -479,6 +587,9 @@ nav {
 @media (max-width: 768px) {
   .workshop-card .card {
     flex-basis: 100%;
+  }
+  .haw-waves .head {
+    font-size: 25px;
   }
 }
 
@@ -731,9 +842,8 @@ header .header-content h1 {
 
 /* Testimonials Style */
 .testimonials-section {
-  margin-top: 140px;
   background-color: #f7f7f7;
-  padding: 100px 0px;
+  padding: 2rem 0px;
 }
 .testimonials-section .section-heading {
   text-align: center;
@@ -762,11 +872,10 @@ header .header-content h1 {
   margin-bottom: 45px;
 }
 .testimonial-item p {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 300;
   font-style: italic;
-  line-height: 35px;
-  margin-bottom: 40px;
+  margin: 2rem auto;
 }
 .testimonial-item h4 {
   font-size: 19px;
